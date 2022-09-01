@@ -28,7 +28,7 @@ public class DBConnection {
 	public DBConnection() {
 		this.setHost	("localhost");
 		this.setPort	("3306");
-		this.setSchema	("GU3015432");
+		this.setSchema	("GU3017141");
 		this.setUser	("root");
 		this.setPassword("senha");
 		this.doConnection();

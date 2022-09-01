@@ -13,12 +13,10 @@
 	ResultSet rSet = usuario.select(" email='"+email+"' AND senha='"+senha+"'");
 	
 	if (rSet.next()){
-		out.print( "existe");	
+		out.print( "Usuário Existente");	
 	}else{
-		out.print( "ñ existe");
+		out.print( "Usuário não cadastrado");
 	}
 	
 	
-	
-
 %>

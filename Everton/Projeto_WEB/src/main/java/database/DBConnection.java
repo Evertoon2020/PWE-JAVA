@@ -1,6 +1,5 @@
 package database;
 
-
 import java.lang.reflect.InvocationTargetException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -28,7 +27,7 @@ public class DBConnection {
 	public DBConnection() {
 		this.setHost	("localhost");
 		this.setPort	("3306");
-		this.setSchema	("GU3017141");
+		this.setSchema	("lojinha");
 		this.setUser	("root");
 		this.setPassword("senha");
 		this.doConnection();

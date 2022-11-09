@@ -22,6 +22,7 @@ public class SendMail {
 		this.properties.put("mail.smtp.port", smtpPort);
 		
 		if (auth.toLowerCase().equals("tls")){
+			this.properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
 			this.properties.put("mail.smtp.starttls.enable", "true");
 			this.properties.put("mail.smtp.auth", "true");
 		}

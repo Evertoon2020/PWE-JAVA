@@ -27,9 +27,9 @@ public class DBConnection {
 	public DBConnection() {
 		this.setHost	("localhost");
 		this.setPort	("3306");
-		this.setSchema	("lojinha");
+		this.setSchema	("_loja");
 		this.setUser	("root");
-		this.setPassword("senha");
+		this.setPassword("");
 		this.doConnection();
 	}
 	
@@ -50,6 +50,9 @@ public class DBConnection {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
+			System.out.println("SQLException: " + e.getMessage());
+		    System.out.println("SQLState: " + e.getSQLState());
+		    System.out.println("VendorError: " + e.getErrorCode());
 			e.printStackTrace();
 		}catch (IllegalArgumentException e) {
 			e.printStackTrace();

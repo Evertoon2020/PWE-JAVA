@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Projeto_WEB</display-name>
+  
+  <servlet>
+    <servlet-name>cadastrar</servlet-name>
+    <servlet-class>controller.cadastrarProdutoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cadastrar</servlet-name>
+    <url-pattern>/cadastrarProduto</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>buscar</servlet-name>
+    <servlet-class>controller.buscarProdutoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>buscar</servlet-name>
+    <url-pattern>/buscarProdutos</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>modificar</servlet-name>
+    <servlet-class>controller.modificarProdutoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>modificar</servlet-name>
+    <url-pattern>/modificarProduto</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>alterar</servlet-name>
+    <servlet-class>controller.alterarProdutoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>alterar</servlet-name>
+    <url-pattern>/alterarProduto</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <jsp-file>/cliHome.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Zoo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <jsp-file>/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SignIn</servlet-name>
+    <jsp-file>/cadastro.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignIn</servlet-name>
+    <url-pattern>/SignIn</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Profile</servlet-name>
+    <jsp-file>/profile.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Profile</servlet-name>
+    <url-pattern>/myProfile</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>Cadastro</servlet-name>
+    <jsp-file>/cadastro.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cadastro</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+</web-app>
